@@ -1,0 +1,178 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+body {
+  font-family: "Lato", Primetime;
+  background-color: #f6f5f0;
+}
+
+/* header and nav-bar */
+#header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: #f6f5f0;
+}
+
+#header-img {
+  width: 5vw;
+  height: 5vw;
+  margin-top: 2vh;
+  margin-left: 1.5vw;
+}
+
+.nav-link {
+  margin: 0 1vw;
+  text-decoration: none;
+  color: #006bb6;
+  font-size: 18px;
+}
+
+#nav-link-box {
+  display: flex;
+  margin-right: 2vw;
+}
+
+#nav-link-box li {
+  list-style: none; 
+  padding: 3vh;
+  border: none;
+  border-bottom: transparent 2px solid;
+  transition: 0.5s;
+}
+
+#nav-link-box li:hover {
+  border-bottom-color: red;
+}
+
+/* end header */
+
+/* about */
+#about-us {
+  color: #006bb6;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 7.5vw;
+}
+
+#uniform-text {
+  color: black;
+  font-size: 20px;
+  margin: 2vw 11vw;
+  line-height: 2.5vw;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  #uniform-text {
+    line-height: 4vw;
+  }
+}
+/* about end */
+
+/* product start */
+#product {
+  margin-top: 6vw;
+}
+
+#uniform-title {
+  color: #006bb6;
+  text-align: center;
+  font-size: 40px;
+}
+
+#uniform-img {
+  display: block;
+  margin: auto;
+  max-width: 40%;
+  height: auto;
+}
+/* product end*/
+
+/* video */
+#video {
+  display: block;
+  margin: auto;
+  max-width: 50%;
+}
+
+/* buy */
+#center-button {
+  display:flex;
+  justify-content: center;
+  border:none;
+  width: 20vw;
+  margin: 1.8vw auto;
+}
+
+#buy {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0.5vw;
+  margin-bottom: 2vw;
+  border-radius: 10px;
+}
+
+#buy:active {
+  background-color: red;
+  box-shadow: 0 2px gray;
+}
+
+/* some media query */
+@media (max-width: 600px) {
+  #nav-link-box {
+    flex-direction: column;
+  }
+   #about-us {
+     margin-top: 100vw;
+    }
+  #uniform-text {
+    line-height: 30px;
+  }
+  #header-img {
+    width: 20vw;
+    height: 20vw;
+  }
+  #submit {
+  width: 20px;
+  height: 20px;
+ }
+}
+
+/* newsletter */
+#newsletter {
+  background: #006bb6;
+  padding: 10px;
+  text-align: center;
+  margin-left: -1vw;
+  margin-bottom: -1vw;
+  width: 101%;
+} 
+
+#newsletter-instructions {
+  color: white;
+  font-size: 20px;
+}
+
+#email-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  margin: 1vw 0;
+  width: 16vw;
+  height: 1.1vw;
+  padding: 3px;
+  text-align: center;
+}
+  
+#submit {
+  width: 6vw;
+  height: 1.7vw;
+  border-radius: 8px;
+}
